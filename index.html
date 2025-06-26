@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photoshoot Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: white;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav a {
+      color: #ffd369;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      height:250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .about, .contact {
+      padding: 2rem;
+      text-align: center;
+    }
+    form input, form textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 8px;
+    }
+    form button {
+      padding: 0.8rem 2rem;
+      border: none;
+      background-color: #ffd369;
+      color: #000;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>Photography by Nilesh </header>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="gallery" class="gallery">
+    <img src="1image.jpg" alt="Wedding">
+    <img src="2image.jpg" alt="Portrait">
+    <img src="3image.jpeg" alt="Fashion">
+    <img src="4image.jpg" alt="Nature">
+    <img src="5image.jpg" alt="Event">
+    <img src="6image.jpg" alt="Studio">
+    <img src="7image.jpg" alt="Baby">
+    <img src="8image.jpg" alt="Mountain">
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m Nilesh, a professional photographer dedicated to capturing life’s most meaningful moments with creativity and precision. From weddings and portraits to corporate events and lifestyle shoots,<br> I specialize in transforming fleeting moments into timeless memories.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p><strong>Name:</strong> Nilesh Wagh</p>
+    <p><strong>Email:</strong> <a href="mailto:wagh6242@gmail.com" style="color: #ffd369;">wagh6242@gmail.com</a></p>
+    <form onsubmit="event.preventDefault(); alert('Thanks! I will contact you soon.')">
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea rows="5" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Nilesh Photography. All Rights Reserved.
+  </footer>
+</body>
+</html>
